@@ -18,6 +18,8 @@
 
 <body>
 
+	
+
     <select onchange="if (this.value) window.location.href=this.value">
         <option value="index.html">Portada &rarr; index.html</option>
         <option value="graph.html">Gráfico &rarr; graph.html</option>
@@ -27,7 +29,8 @@
     <div id="mapamundi" style="width: 100vw; height: 100vh;"></div>
 
     <script>
-        var url = "https://raw.githubusercontent.com/profesorfaco/dno037-2020/gh-pages/clase-05/datos.json"; //esto debe cambiarse
+        var url = "https://raw.githubusercontent.com/janakristin/clase-05/gh-pages/datos.json"; //esto debe cambiarse
+
         
         var data;
 
@@ -42,6 +45,8 @@
                 minZoom:2,
                 maxZoom: 10,
                 id: 'mapbox/streets-v11' //por acá estaría el cambio para puntos extra
+				
+				
             }).addTo(miMapa);
 
             for (let x = 0; x < 50; x++) {
